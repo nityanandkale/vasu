@@ -51,7 +51,7 @@ pipeline {
                         } catch (err) {
                             echo: 'caught error: $err'
                         }
-                        sh "sshpass -p '$USERPASS' -v ssh -o StrictHostKeyChecking=no $USERNAME@$prod_ip \"docker run --restart always --name vasu5 -p 8080:8080 -d nitya1/vasu5:${env.BUILD_NUMBER}\""
+                        sh "sshpass -p '$USERPASS' -v ssh -o StrictHostKeyChecking=no $USERNAME@$prod_ip \"docker run --restart always --name vasu -p 8080:8080 -d nitya1/vasu5:${env.BUILD_NUMBER}\""
                     }
                 }
             }
