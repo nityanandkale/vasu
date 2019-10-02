@@ -17,7 +17,7 @@ pipeline {
                 script {
                     app = docker.build("nitya1/pvasu5")
                     app.inside {
-                        sh 'echo $(curl localhost:8080)'
+                        sh 'echo $(curl localhost:8081)'
                     }
                 }
             }
