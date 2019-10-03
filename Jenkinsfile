@@ -6,7 +6,9 @@ pipeline {
         }
 	stage('Build') {
 	            steps { sh label: '', script: 'mvn clean'
-		            sh label: '', script: 'mvn install'}
+		            sh label: '', script: 'mvn install'
+                            sh label: '', script: 'mvn install -Dbuild.number=${BUILD_NUMBER}'			  
+			  }
 		            }
 
         stage('Build Docker Image') {
