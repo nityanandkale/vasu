@@ -2,5 +2,5 @@
 FROM tomcat:8.0
 MAINTAINER pandian
 # COPY path-to-your-application-war path-to-webapps-in-docker-tomcat
-EXPOSE 80
+EXPOSE 8081
 COPY **/*.war /usr/local/tomcat/webapps/
