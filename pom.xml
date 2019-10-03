@@ -81,7 +81,7 @@
             <artifactId>maven-war-plugin</artifactId>
             <configuration>
                 <manifest>
-                    <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                    <addDefaultImplementationEntries>false</addDefaultImplementationEntries>
                 </manifest>
                 <archive>
                     <manifestEntries>
